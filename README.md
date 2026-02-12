@@ -74,7 +74,6 @@ graph TD
     
     K --> Q[Consolidar Resultados do Artigo]
     O --> Q
-    L --> Q
     P --> Q
     
     Q --> R{Próximo Artigo?}
