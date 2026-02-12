@@ -130,7 +130,7 @@ python dandara_data.py
 O script possui detecção automática de ambiente. Se rodar no Colab, ele tentará montar o Google Drive e buscar os arquivos no caminho:
 `/content/drive/My Drive/estudo_quilombos_organizado/`
 
-Pode-se criar essas pastas no google drive ou mudar no código esse trecho para outro nome.
+Pode-se criar essa pasta no google drive ou mudar no código esse trecho para outro nome.
 ### 3. Resultados (Outputs)
 
 Após a execução, o programa gerará três arquivos:
