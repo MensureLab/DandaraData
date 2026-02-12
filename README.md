@@ -10,7 +10,7 @@
 
 ## 📖 Sobre o Projeto
 
-O **DandaraData** é um software desenvolvido no contexto do **MensureLab - UFPA** (Universidade Federal do Pará), criado para superar o desafio metodológico da identificação manual de entidades geográficas em grandes *corpora* de texto.
+O **DandaraData** é um software desenvolvido no contexto do **MensureLab - Laboratório de Estudos Métricos da Informação e de Avaliação de Políticas Públicas em CTI para o desenvolvimento da Amazônia Legal (UFPA)**, criado para superar o desafio metodológico da identificação manual de entidades geográficas em grandes *corpora* de texto.
 
 O nome do programa é uma homenagem a **Dandara**, do Quilombo dos Palmares, símbolo de resistência ao sistema escravista.
 
@@ -21,7 +21,7 @@ Automatizar o cruzamento de dados entre a produção científica (indexada na Sc
 
 ## ⚙️ Como Funciona (Metodologia)
 
-O algoritmo opera sob uma lógica **determinística** (não probabilística), utilizando expressões regulares (*Regex*) e regras de validação estritas para garantir alta precisão (minimizar falsos positivos).
+O algoritmo opera sob uma lógica **determinística**, utilizando expressões regulares (*Regex*) e regras de validação estritas para garantir alta precisão (minimizar falsos positivos).
 
 O processamento ocorre em três etapas principais de filtragem:
 
@@ -36,7 +36,7 @@ Para nomes de comunidades que são palavras comuns (ex: "Barreiras", "Solidão",
 * *Exemplo:* A palavra "Forte" só será considerada uma comunidade se for precedida (janela de 4 palavras) por termos como "Quilombo", "Comunidade", "Território", etc.
 
 ### 3. Busca Regional
-Caso não encontre uma comunidade específica, o algoritmo busca por menções generalistas através de padrões linguísticos complexos.
+Caso não encontre uma comunidade específica, o algoritmo busca por menções generalistas através de padrões linguísticos.
 * *Exemplo:* Identifica frases como *"comunidades quilombolas do sertão da Bahia"* ou *"quilombos da região norte"*.
 
 ---
