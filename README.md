@@ -43,7 +43,7 @@ Caso não encontre uma comunidade específica, o algoritmo busca por menções g
 
 ## 🔄 Fluxograma de Execução
 
-O diagrama abaixo ilustra o fluxo lógico implementado no código `QuilombolaAnalyzer`:
+O diagrama abaixo ilustra o fluxo lógico implementado:
 
 ```mermaid
 graph TD
