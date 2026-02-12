@@ -10,12 +10,12 @@
 
 ## 📖 Sobre o Projeto
 
-O **DandaraData** é um software desenvolvido no contexto do **MensureLab - Laboratório de Estudos Métricos da Informação e de Avaliação de Políticas Públicas em CTI para o desenvolvimento da Amazônia Legal (UFPA)**, criado para superar o desafio metodológico da identificação manual de entidades geográficas em grandes *corpora* de texto.
+O **DandaraData** é um programa desenvolvido no contexto do **MensureLab - Laboratório de Estudos Métricos da Informação e de Avaliação de Políticas Públicas em CTI para o desenvolvimento da Amazônia Legal (UFPA)**, criado para superar o desafio metodológico da identificação manual de entidades geográficas em grandes *corpora* de texto.
 
 O nome do programa é uma homenagem a **Dandara**, do Quilombo dos Palmares, símbolo de resistência ao sistema escravista.
 
 ### Objetivo
-Automatizar o cruzamento de dados entre a produção científica (indexada na SciELO) e a lista oficial de CRQs certificadas pela Fundação Cultural Palmares (FCP). O software visa responder a questões sobre assimetrias regionais e visibilidade científica destas comunidades.
+Automatizar o cruzamento de dados entre a produção científica (indexada na SciELO) e a lista oficial de CRQs certificadas pela Fundação Cultural Palmares (FCP). O objetivo é responder a questões sobre assimetrias regionais e visibilidade científica destas comunidades.
 
 ---
 
@@ -162,8 +162,8 @@ Após a execução, o programa gerará três arquivos:
 
 Desenvolvido pelo **MensureLab** (UFPA).
 
-* **Autores do Artigo:** Ramiro Arthur Sobrinho Freire Silva, Josafha Pereira de Carvalho e Ediane Maria Gheno.
-* **Desenvolvedores do Código:** @RamiroKord & @Josafha-pereira.
+* **Autores da pesquisa:** Ramiro Arthur Sobrinho Freire Silva, Josafha Pereira de Carvalho e Ediane Maria Gheno.
+* **Desenvolvedores do Código:** @RamiroKord & @Josafha-pereira, orientados por Ediane Maria Gheno.
 
 ---
 
