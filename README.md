@@ -1,4 +1,3 @@
-```markdown
 # DandaraData: Identificação de Comunidades Remanescentes de Quilombos na Produção Científica
 
 > Uma ferramenta de mineração de texto e bibliometria desenvolvida para identificar, mapear e analisar a visibilidade de Comunidades Remanescentes de Quilombos (CRQs) em grandes volumes de artigos científicos.
@@ -11,18 +10,18 @@
 
 ## 📖 Sobre o Projeto
 
-O **DandaraData** é um programa desenvolvido no laboratório **MensureLab - Laboratório de Estudos Métricos da Informação e de Avaliação de Políticas Públicas em CTI para o desenvolvimento da Amazônia Legal (UFPA)**, criado para superar o desafio metodológico da identificação manual de entidades em grandes volumes de texto.
+O **DandaraData** é um software desenvolvido no contexto do **MensureLab - UFPA** (Universidade Federal do Pará), criado para superar o desafio metodológico da identificação manual de entidades geográficas em grandes *corpora* de texto.
 
 O nome do programa é uma homenagem a **Dandara**, do Quilombo dos Palmares, símbolo de resistência ao sistema escravista.
 
 ### Objetivo
-Automatizar o cruzamento de dados entre a produção científica (indexada na SciELO) e a lista oficial de CRQs certificadas pela Fundação Cultural Palmares (FCP). O programa visa responder a questões sobre assimetrias regionais e visibilidade científica destas comunidades.
+Automatizar o cruzamento de dados entre a produção científica (indexada na SciELO) e a lista oficial de CRQs certificadas pela Fundação Cultural Palmares (FCP). O software visa responder a questões sobre assimetrias regionais e visibilidade científica destas comunidades.
 
 ---
 
-## Como Funciona (Metodologia)
+## ⚙️ Como Funciona (Metodologia)
 
-O algoritmo opera sob uma lógica **determinística**, utilizando expressões regulares (*Regex*) e regras de validação estritas para garantir alta precisão (minimizar falsos positivos).
+O algoritmo opera sob uma lógica **determinística** (não probabilística), utilizando expressões regulares (*Regex*) e regras de validação estritas para garantir alta precisão (minimizar falsos positivos).
 
 O processamento ocorre em três etapas principais de filtragem:
 
@@ -33,16 +32,16 @@ O sistema cruza os termos encontrados nos metadados dos artigos (Título, Resumo
 * **Nível 0 (Baixa Prioridade):** Encontra `Nome da Comunidade` + `Estado`.
 
 ### 2. Validação Semântica e Desambiguação
-Para nomes de comunidades que são palavras ambíguas (ex: "Barreiras", "Solidão", "União"), o DandaraData exige um **contexto desambiguador**.
+Para nomes de comunidades que são palavras comuns (ex: "Barreiras", "Solidão", "União"), o DandaraData exige um **contexto desambiguador**.
 * *Exemplo:* A palavra "Forte" só será considerada uma comunidade se for precedida (janela de 4 palavras) por termos como "Quilombo", "Comunidade", "Território", etc.
 
 ### 3. Busca Regional
-Caso não encontre uma comunidade específica, o algoritmo busca por menções generalistas através de padrões linguísticos.
+Caso não encontre uma comunidade específica, o algoritmo busca por menções generalistas através de padrões linguísticos complexos.
 * *Exemplo:* Identifica frases como *"comunidades quilombolas do sertão da Bahia"* ou *"quilombos da região norte"*.
 
 ---
 
-## Fluxograma de Execução
+## 🔄 Fluxograma de Execução
 
 O diagrama abaixo ilustra o fluxo lógico implementado no código `QuilombolaAnalyzer`:
 
