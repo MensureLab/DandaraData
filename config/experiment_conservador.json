@@ -1,0 +1,30 @@
+{
+  "experiment": {
+    "run_id": "v3_conservador",
+    "description": "Variacao de comparacao: exige mais evidencias para propor vinculos"
+  },
+  "inputs": {
+    "articles": "data/raw/artigos_atual_ofc.csv",
+    "fcp": "data/raw/crqrs_atual_ofc.csv",
+    "historical_output": "data/reference/artigos_final_ofc_original.csv",
+    "audit": "data/reference/Validacao_Auditoria.csv",
+    "false_negatives": "data/reference/Falsos_Negativos.csv"
+  },
+  "matching": {
+    "minimum_name_length": 3,
+    "minimum_score": 7,
+    "require_geographic_evidence": true,
+    "homonym_margin": 2,
+    "weights": {
+      "name": 3,
+      "municipality": 4,
+      "state": 1,
+      "context": 1,
+      "cooccurrence": 2,
+      "nested_only_penalty": 3
+    }
+  },
+  "outputs": {
+    "root_dir": "data/outputs"
+  }
+}

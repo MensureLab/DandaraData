@@ -1,0 +1,39 @@
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Testes e ferramentas
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# VS Code
+.vscode/*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos locais e credenciais
+.env
+.env.*
+!.env.example
+
+# Dados de entrada e referência
+# Revisar autorização antes de publicar
+data/raw/
+data/reference/
+
+# Resultados experimentais
+data/outputs/*
+!data/outputs/.gitkeep
